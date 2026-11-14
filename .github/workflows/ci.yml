@@ -9,7 +9,7 @@ on:
 jobs:
   test:
     name: Test
-    runs-on: ubuntu-22.04
+    runs-on: durative
 
     strategy:
       # A failure in one matrix job says nothing about the others, and cancelled jobs report a confusing "exit code
@@ -136,7 +136,7 @@ jobs:
 
   test-pgbouncer:
     name: Test PgBouncer with PostgreSQL 18
-    runs-on: ubuntu-22.04
+    runs-on: durative
 
     steps:
       - name: Check out code into the Go module directory
